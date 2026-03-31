@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="../css/user_manager.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search user">
+        </div>
+        <div class="top-right">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-bell"></i>
+            <img src="https://i.pravatar.cc/40" alt="Avatar" class="avatar">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <a href="../pages/user_manager.html" class="sidebar-item active">
+                <i class="fa-solid fa-users"></i>
+                <span>Manage Users</span>
+            </a>
+            <a href="../pages/entries_manager.html" class="sidebar-item">
+                <i class="fa-solid fa-tags"></i>
+                <span>Manage Categories</span>
+            </a>
+            <a href="../pages/article_manager.html" class="sidebar-item">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Manage Article</span>
+            </a>
+            <a href="#" class="sidebar-item logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Log out</span>
+            </a>
+        </aside>
+
+        <main class="main-content">
+            <div class="header-main">
+                <h2>Team members <span class="user-count">100 users</span></h2>
+            </div>
+
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Email address</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://i.pravatar.cc/40" alt=""> Olivia Rhye <br><small>@olivia</small></td>
+                        <td><span class="status active">hoạt động</span></td>
+                        <td>olivia@untitledui.com</td>
+                        <td><button class="btn-block">block</button><button class="btn-unblock">unblock</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.pravatar.cc/40" alt=""> Phoenix Baker <br><small>@phoenix</small></td>
+                        <td><span class="status active">hoạt động</span></td>
+                        <td>phoenix@untitledui.com</td>
+                        <td><button class="btn-block">block</button><button class="btn-unblock">unblock</button></td>
+                    </tr>
+                    <!-- Thêm các hàng khác nếu cần -->
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button>← Previous</button>
+                <div class="page-numbers">
+                    <span class="active">1</span> 2 3 ... 8 9 10
+                </div>
+                <button>Next →</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
