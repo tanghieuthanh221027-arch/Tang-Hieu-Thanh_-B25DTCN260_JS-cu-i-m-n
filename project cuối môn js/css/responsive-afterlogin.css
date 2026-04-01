@@ -1,0 +1,157 @@
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+    .main-content {
+        width: 92%;
+    }
+
+    .recent-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recent-small {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .post-card.small {
+        width: 100%;
+    }
+
+    .post-card.small img {
+        width: 280px;
+        height: 200px;
+    }
+
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .search-bar input {
+        padding-left: 45px;
+    }
+
+    .logo-search {
+        right: auto;
+        left: 15px;
+    }
+
+    .main-content {
+        width: 94%;
+        padding: 20px 0;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .post-card.large img {
+        height: 240px;
+    }
+
+    .post-card.small {
+        flex-direction: column;
+    }
+
+    .post-card.small img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .post-card img {
+        height: 220px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .page-numbers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand {
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+    }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+    }
+
+    .post-info h3 {
+        font-size: 18px;
+    }
+
+    .post-info p {
+        font-size: 14px;
+    }
+
+    .categories a {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 50px 20px;
+    }
+
+    .footer-brand h1 {
+        font-size: 24px;
+    }
+
+    .footer-column h4 {
+        font-size: 15px;
+    }
+}
