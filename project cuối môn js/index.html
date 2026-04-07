@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIKKEI_EDU_BLOG</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <i class="fa-solid fa-microchip"></i>
+            <span>RIKKEI_EDU_BLOG</span>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for articles ...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- ✅ Bỏ khoảng trắng thừa trong class "auth-butto  ns" -->
+        <div class="auth-buttons" id="authButtons"></div>
+    </header>
+
+    <div class="main-content">
+
+        <!-- Recent Blog Posts -->
+        <section class="section recent-section">
+            <h2 class="section-title">Recent blog posts</h2>
+            <div class="recent-grid">
+                <div class="recent-large"></div>
+                <div class="recent-small"></div>
+            </div>
+        </section>
+
+        <!-- All Blog Posts -->
+        <section class="blog-section">
+            <div class="section-header">
+
+                <div class="top-row">
+                    <h2>All blog posts</h2>
+                    <a href="pages/add-new-article.html" class="all-post-link">All my posts</a>
+                </div>
+
+                <!-- ✅ Đổi từ .categories (static) sang .category-container (JS render động) -->
+                <div class="category-container">
+                    <!-- Các nút filter sẽ được render bằng JS -->
+                </div>
+
+            </div>
+
+            <div class="posts-grid"></div>
+
+            <div class="pagination"></div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h1>MY BLOG</h1>
+                    </div>
+
+                    <div class="footer-column about">
+                        <h4>About Rareblocks</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta
+                            lectus ridiculus in mattis. Netus sodales in volutpat ullamcorper amet adipiscing fermentum.
+                        </p>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Features</a>
+                        <a href="#">Works</a>
+                        <a href="#">Career</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Help</h4>
+                        <a href="#">Customer Support</a>
+                        <a href="#">Delivery Details</a>
+                        <a href="#">Term & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Free eBooks</a>
+                        <a href="#">Development Tutorial</a>
+                        <a href="#">How to - Blog</a>
+                        <a href="#">Youtube Playlist</a>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div><!-- ✅ Đóng thẻ .main-content đúng chỗ -->
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
